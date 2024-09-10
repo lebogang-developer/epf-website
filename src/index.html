@@ -14,19 +14,33 @@
       <div class="flex justify-between h-16">
         <!-- Logo -->
         <div class="flex-shrink-0 flex items-center">
-          <img class="h-10 w-auto" src="path-to-logo.png" alt="Empire Partner Foundation Logo">
+          <!-- <img class="h-10 w-auto" src="path-to-logo.png" alt="Empire Partner Foundation Logo"> -->
+           <h3>EPF Website..</h3>
         </div>
+
+          <!-- Social Media -->
+      <div class="flex space-x-4">
+        <a href="https://www.facebook.com" target="_blank" class="text-gray-600 hover:text-blue-600">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="text-gray-600 hover:text-blue-400">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="text-gray-600 hover:text-blue-700">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
 
         <!-- Navigation Links -->
         <div class="hidden md:flex space-x-8 items-center">
           <a href="#home" class="text-gray-600 hover:text-blue-500 flex items-center">
-            <i class="fas fa-home mr-2"></i> Home
+            <i class="fab fa-home mr-2"></i> Home
           </a>
           <a href="#about" class="text-gray-600 hover:text-blue-500 flex items-center">
-            <i class="fas fa-info-circle mr-2"></i> About Us
+            <i class="fab fa-info-circle mr-2"></i> About Us
           </a>
           <a href="#contact" class="text-gray-600 hover:text-blue-500 flex items-center">
-            <i class="fas fa-envelope mr-2"></i> Contact Us
+            <i class="fab fa-envelope mr-2"></i> Contact Us
           </a>
         </div>
       </div>
@@ -43,5 +57,124 @@
         </div>
     </div>
 </section>
+
+<!-- Impact Metrics -->
+<section class="py-12 bg-gray-100">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Our Impact</h2>
+        <div class="flex justify-around">
+            <div class="flex flex-col items-center">
+                <div class="text-4xl font-bold animate__animated animate__bounceIn">500+</div>
+                <p class="text-lg mt-2">Projects Completed</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="text-4xl font-bold animate__animated animate__bounceIn">200+</div>
+                <p class="text-lg mt-2">Volunteers</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="text-4xl font-bold animate__animated animate__bounceIn">1000+</div>
+                <p class="text-lg mt-2">Lives Impacted</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Foundation History -->
+<section class="py-12">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Our Story</h2>
+        <div class="space-y-8">
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-bold mb-2">2010</h3>
+                <p class="text-lg">Foundation established with a vision to help underprivileged communities.</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-bold mb-2">2015</h3>
+                <p class="text-lg">Launched our first major community outreach program.</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-bold mb-2">2020</h3>
+                <p class="text-lg">Expanded our services to include educational programs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Members -->
+<section class="py-12 bg-gray-100">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Meet Our Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Team Member Card -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img src="https://empirepartnerfoundation.org/assets/img/team/ismail.png" alt="Team Member" class="w-32 h-32 mx-auto rounded-full mb-4">
+                <h3 class="text-xl font-bold mb-2">Ismail Sadek</h3>
+                <p class="text-lg">Chairman</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img src="https://empirepartnerfoundation.org/assets/img/team/rori.png" alt="Team Member" class="w-32 h-32 mx-auto rounded-full mb-4">
+                <h3 class="text-xl font-bold mb-2">Rorisang Monatisa</h3>
+                <p class="text-lg">EPF Innovation Campus: Software Developer</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img src="https://empirepartnerfoundation.org/assets/img/team/bothale.png" alt="Team Member" class="w-32 h-32 mx-auto rounded-full mb-4">
+                <h3 class="text-xl font-bold mb-2">Botlhale Morobe</h3>
+                <p class="text-lg">EPF Innovation Campus: Account Manager</p>
+            </div>
+            <!-- Repeat for other team members -->
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section class="py-12 bg-gray-100">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Get in Touch</h2>
+        <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="name" class="block text-lg font-medium mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-lg font-medium mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-lg font-medium mb-2">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-lg" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-lg text-xl hover:bg-blue-700 transition duration-300">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Information -->
+<section class="py-12">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Contact Information</h2>
+        <div class="flex justify-center space-x-8">
+            <div>
+                <h3 class="text-xl font-bold mb-2">Email</h3>
+                <p>info@empirepartnerfoundation.org</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-2">Phone</h3>
+                <p>+27 11 084 1100</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-2">Follow Us</h3>
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-red-600 hover:text-red-800"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 </body>
 </html>
