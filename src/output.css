@@ -665,6 +665,10 @@ video {
   height: 8rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .w-auto {
   width: auto;
 }
@@ -675,6 +679,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .max-w-7xl {
@@ -767,6 +775,11 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -826,6 +839,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
