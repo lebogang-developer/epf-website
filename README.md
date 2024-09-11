@@ -25,19 +25,24 @@ A responsive navigation bar that adapts to various screen sizes.
 Social media icons between the logo and the navigation links.
 Mobile menu for small and tablet devices.
 2. Contact Information Section
+3. 
 Responsive contact cards that display key contact information like address, email, and phone.
 SVG icons added to each contact method for better visual presentation.
-3. Smooth Scrolling
+
+4. Smooth Scrolling
 Implemented smooth scrolling across the site for enhanced navigation and user experience.
-4. Contact Form
+6. Contact Form
+7. 
 A simple contact form with basic client-side validation using JavaScript. It validates the user's name, email, and message fields before submission, showing error messages if the fields are invalid.
-5. Animations
+8. Animations
+9. 
 Smooth animations applied to certain sections and icons, making the site interactive and engaging.
 
 Setup and Installation
+
 Follow these steps to run the project locally:
 
-Clone the Repository: git clone https://github.com/lebogang-developer/empire-partner-foundation.git
+Clone the Repository: git clone https://github.com/lebogang-developer/epf-website
 
 Navigate to the Project Folder: cd epf-website
 
