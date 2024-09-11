@@ -1,4 +1,14 @@
- // Get form elements
+ // Get the mobile menu elements
+ var mobileMenuButton = document.getElementById('mobileMenuButton');
+ var mobileMenu = document.getElementById('mobileMenu');
+
+ // Toggle the mobile menu visibility when the hamburger button is clicked
+ mobileMenuButton.addEventListener('click', function() {
+   mobileMenu.classList.toggle('hidden');
+ });
+
+
+// Get form elements
  var contactForm = document.getElementById('contactForm');
     var nameInput = document.getElementById('name');
     var emailInput = document.getElementById('email');

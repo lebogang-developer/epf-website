@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
     <title>Empire Partner Foundation</title>
-    <!-- <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script> -->
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -23,6 +19,15 @@
               alt="Empire Partner Foundation Logo"
             />
           </div>
+
+           <!-- Hamburger Menu Icon (Visible on Mobile) -->
+      <div class="flex md:hidden">
+        <button id="mobileMenuButton" class="text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
 
           <!-- Social Media -->
           <div class="flex space-x-4">
@@ -98,6 +103,7 @@
           </div>
 
           <!-- Navigation Links -->
+           <!-- Navigation Links (Hidden on Mobile, Visible on Desktop) -->
           <div class="hidden md:flex space-x-8 items-center">
             <a href="#home" class="text-gray-600 hover:text-blue-500 flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -121,7 +127,29 @@
           </div>
         </div>
       </div>
+       <!-- Mobile Menu Links (Initially Hidden) -->
+      <div id="mobileMenu" class="md:hidden hidden mx-2">
+        <a href="#home" class="text-gray-600 hover:text-blue-500 flex items-center mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20v-6h4v6m5 0v-8h3L12 3 2 12h3v8z" />
+          </svg>
+          Home
+        </a>
+        <a href="#about" class="text-gray-600 hover:text-blue-500 flex items-center mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-2v-2a2 2 0 114 0v6zM12 8v.01M19 9h2v12H3V9h2" />
+          </svg>
+          About Us
+        </a>
+        <a href="#contact" class="text-gray-600 hover:text-blue-500 flex items-center mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m2-4h2v4h-2V8m0 4h2m-6 8h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          Contact Us
+        </a>
+      </div>
     </nav>
+    
     <!-- Hero Section -->
     <section
       class="relative bg-cover bg-center h-screen"
@@ -133,15 +161,15 @@
           <h1
             class="text-4xl md:text-6xl font-bold mb-4 animate__animated animate__fadeIn"
           >
-            Empowering Communities
+            Empire Partner Foundation
           </h1>
           <p
             class="text-lg md:text-2xl mb-6 animate__animated animate__fadeIn animate__delay-1s"
           >
-            Join us in making a difference.
+          YOUTH - TECHNOLOGY - ENTREPRENEURSHIP
           </p>
           <a
-            href="#donate"
+            href="#contact"
             class="bg-blue-500 text-white px-6 py-3 rounded-lg text-xl hover:bg-blue-700 transition duration-300"
             >Get Involved</a
           >
@@ -156,93 +184,90 @@
         <div class="flex justify-around">
           <div class="flex flex-col items-center">
             <div class="text-4xl font-bold animate__animated animate__bounceIn">
-              500+
+              2500
             </div>
-            <p class="text-lg mt-2">Projects Completed</p>
+            <p class="text-lg mt-2">Digital Innovators</p>
           </div>
           <div class="flex flex-col items-center">
             <div class="text-4xl font-bold animate__animated animate__bounceIn">
-              200+
+              50
             </div>
-            <p class="text-lg mt-2">Volunteers</p>
+            <p class="text-lg mt-2">Internships</p>
           </div>
           <div class="flex flex-col items-center">
             <div class="text-4xl font-bold animate__animated animate__bounceIn">
-              1000+
+              30
             </div>
-            <p class="text-lg mt-2">Lives Impacted</p>
+            <p class="text-lg mt-2">Bursaries</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="text-4xl font-bold animate__animated animate__bounceIn">
+              12
+            </div>
+            <p class="text-lg mt-2">Permanent Jobs</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- About Section -->
-    <section class="about py-12" id="about">
-      <div class="text-center text-white-200">
-        <h2 class="text-3xl font-bold mb-8">About Empire Partner Foundation</h2>
-        <div class="flex justify-around">
-            <div class="flex flex-col items-center">
-                <p class="text-lg mt-2">
-                    We are a non-profit organization that was established in 2016 with the
-                    sole purpose of empowering the youth to build a better South Africa
-                    and African continent through technology. At Empire Partner Foundation
-                    Tech Hub, we believe that technology can be used as a tool to solve
-                    some of the key socio-economic challenges that we face today.
-                  </p>
-            </div>
-               <div class="flex flex-col items-center">
-                <p class="text-lg mt-2">
-                    Under the Youth pillar, we aim to provide young people with access to technology
-                     and digital skills training. This includes programs such as coding boot camps, 
-                     hackathons, and mentorship opportunities to help the youth develop their skills and 
-                     realize their full potential.
-                </p>
-               </div>
-               <div class="flex flex-col items-center">
-                <p class="text-lg mt-2">
-                    The Technology pillar is focused on driving innovation and the adoption of emerging technologies 
-                    in addressing 10 Key Sector Challenges. We believe that by leveraging technology, we can help solve some of the biggest challenges
-                     facing our continent and improve the quality of life for all.
-                </p>
-               </div>
-                 <div class="flex flex-col items-center">
-                    <p class="text-lg mt-2">
-                        Finally, our Entrepreneurship pillar is aimed at supporting the growth and development of startups and small businesses in the technology space. This includes access to funding, mentorship, and networking opportunities to help young entrepreneurs turn their ideas into successful businesses. At Empire Partner Foundation Tech Hub, we are committed to making a meaningful and sustainable impact on South Africa and the African continent. Join us on this 
-                        journey as we work towards a better future for all
-                    </p>
-                 </div>
-                  
+<section id="about" class="bg-gray-100 py-12">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <div class="flex justify-center mb-4">
+          <!-- Icon 1 -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l3 3m0 0l3-3m-3 3V3m0 13l3-3m0 0l-3 3M21 12h-6" />
+          </svg>
         </div>
-      
+        <h3 class="text-lg font-bold mb-2">About Us</h3>
+        <p class="text-gray-600">
+          We are a non-profit organization that was established in 2016 with the sole
+           purpose of empowering the youth to build a better South Africa and African 
+           continent through technology. At Empire Partner Foundation Tech Hub, we believe 
+           that technology can be used as a tool to solve
+           some of the key socio-economic challenges that we face today.
+        </p>
       </div>
-    </section>
-    <!-- Foundation History -->
-    <section class="py-12">
-      <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-8">Our Story</h2>
-        <div class="space-y-8">
-          <div class="bg-white shadow-lg rounded-lg p-6">
-            <h3 class="text-xl font-bold mb-2">2010</h3>
-            <p class="text-lg">
-              Foundation established with a vision to help underprivileged
-              communities.
-            </p>
-          </div>
-          <div class="bg-white shadow-lg rounded-lg p-6">
-            <h3 class="text-xl font-bold mb-2">2015</h3>
-            <p class="text-lg">
-              Launched our first major community outreach program.
-            </p>
-          </div>
-          <div class="bg-white shadow-lg rounded-lg p-6">
-            <h3 class="text-xl font-bold mb-2">2020</h3>
-            <p class="text-lg">
-              Expanded our services to include educational programs.
-            </p>
-          </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <div class="flex justify-center mb-4">
+          <!-- Icon 2 -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M20.86 9.14a8 8 0 10-11.72 0A8 8 0 0020.86 9.14z" />
+          </svg>
         </div>
+        <h3 class="text-lg font-bold mb-2">Youth Pillar</h3>
+        <p class="text-gray-600">
+          Under the Youth pillar, we aim to provide young people with access to technology 
+          and digital skills training. This includes programs such as coding boot camps, hackathons, 
+          and mentorship opportunities to help the youth develop 
+           skills and realize their full potential.
+        </p>
       </div>
-    </section>
+
+      <!-- Card 3 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <div class="flex justify-center mb-4">
+          <!-- Icon 3 -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12m-8 8l8-8m0 8l8-8m-8 8V3" />
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold mb-2">Technology Pillar</h3>
+        <p class="text-gray-600">
+          The Technology pillar is focused on driving innovation and the adoption of emerging 
+          technologies in addressing 10 Key Sector Challenges. We believe that by leveraging technology,
+           we can help solve some of the biggest challenges 
+          facing our continent and improve the quality of life for all.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Team Members -->
     <section class="py-12 bg-gray-100">
@@ -348,41 +373,73 @@
     </section>
 
     <!-- Contact Information -->
-    <section class="py-12">
-      <div class="container mx-auto text-center">
+    <section class="py-12 bg-gray-100">
+      <div class="container mx-auto text-center px-6 md:px-12">
         <h2 class="text-3xl font-bold mb-8">Contact Information</h2>
-        <div class="flex justify-center space-x-8">
-            <div>
-                <h3 class="text-xl font-bold mb-2">Address</h3>
-                <p>
-                    Ground Floor, 35 Ferguson Road, <br> Illovo, Sandton, Gauteng, 2196
-                </p>
-        </div>
-          <div>
+    
+        <!-- Responsive Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Address -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex justify-center mb-4">
+              <!-- Address Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0-2.755 1.79-5 4-5s4 2.245 4 5c0 1.404-.484 3.133-1.465 4.733C17.86 17.86 16.075 19 14 19h-2v-4h2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Address</h3>
+            <p>Ground Floor, 35 Ferguson Road,<br>Illovo, Sandton, Gauteng, 2196</p>
+          </div>
+    
+          <!-- Email -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex justify-center mb-4">
+              <!-- Email Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 10V6a2 2 0 00-2-2H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2z" />
+              </svg>
+            </div>
             <h3 class="text-xl font-bold mb-2">Email</h3>
             <p>info@empirepartnerfoundation.org</p>
           </div>
-          <div>
+    
+          <!-- Phone -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex justify-center mb-4">
+              <!-- Phone Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8.5C3 5.46 5.46 3 8.5 3h7A5.5 5.5 0 0121 8.5v7A5.5 5.5 0 0115.5 21h-7A5.5 5.5 0 013 15.5v-7z" />
+              </svg>
+            </div>
             <h3 class="text-xl font-bold mb-2">Phone</h3>
             <p>+27 11 084 1100</p>
           </div>
-          <div>
-            <!-- Socials -->
+    
+          <!-- Follow Us -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex justify-center mb-4">
+              <!-- Social Media Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9h8m-4 0v6m4-9H8c-1.656 0-3 1.344-3 3v6c0 1.656 1.344 3 3 3h8c1.656 0 3-1.344 3-3V9c0-1.656-1.344-3-3-3z" />
+              </svg>
+            </div>
             <h3 class="text-xl font-bold mb-2">Follow Us</h3>
             <div class="flex justify-center space-x-4">
-                
-               <!-- Facebook Icon -->
-        <a href="https://www.facebook.com" target="_blank" class="text-gray-600 hover:text-blue-600">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 2h-3a4 4 0 00-4 4v3H7v4h4v8h4v-8h3l1-4h-4V6a1 1 0 011-1h3V2z" />
-            </svg>
-          </a>
-           <!-- Twitter Icon -->
-           <a href="https://www.twitter.com" target="_blank" class="text-gray-600 hover:text-blue-400">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12l4 4 4-4m-4-4v8" />
-            </svg>
-          </a>
+              <!-- Facebook Icon -->
+              <a href="https://www.facebook.com" target="_blank" class="text-gray-600 hover:text-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 2h-3a4 4 0 00-4 4v3H7v4h4v8h4v-8h3l1-4h-4V6a1 1 0 011-1h3V2z" />
+                </svg>
+              </a>
+    
+              <!-- Twitter Icon -->
+              <a href="https://www.twitter.com" target="_blank" class="text-gray-600 hover:text-blue-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12l4 4 4-4m-4-4v8" />
+                </svg>
+              </a>
+    
+              <!-- LinkedIn Icon -->
               <a href="https://www.linkedin.com" target="_blank" class="text-gray-600 hover:text-blue-700">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8a6 6 0 0112 0v14a6 6 0 01-12 0V8z" />
@@ -394,6 +451,7 @@
         </div>
       </div>
     </section>
+    
 
     <script src="./index.js"></script>
   </body>
